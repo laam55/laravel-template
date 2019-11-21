@@ -1,0 +1,77 @@
+body{
+	background-image:url('../../../../images/coder2.jpeg');
+	background-repeat: no-repeat;
+	background-size:cover
+}
+.text-success{
+	color:#42B72A;
+}
+.text-gray{
+	color:#B5B5B5;
+}
+.product-img img{
+	border-radius: 50%;
+}
+
+#div1{
+	background-color: black;
+	opacity: .6;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	z-index:99;
+}
+#form1{
+	background:white;
+	width:300px;
+	height: 100px;
+	position:absolute;
+	top:40%;
+	left:37%;
+	z-index:999;
+	padding:20px 20px 40px 40px;
+}
+#username{
+	font-size: 18px;
+	/*font-weight: bold;*/
+	color:yellow;
+}
+#remoteVideo{
+	height:100%;
+	position: absolute;
+}
+#localVideo{
+	position:absolute;
+	bottom:5%;
+	right:5%;
+	z-index: 999;
+	background-color: red;
+}
+#container-call{
+	overflow: hidden;
+}
+@media only screen and (min-width: 1400px) {
+    #form1 {
+        left:40%;
+    }
+}
+
+@media only screen and (min-width: 915px) {
+    #sectionChat {
+        padding-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #form1 {
+        left:31%;
+    }
+}
+
+@media only screen and (max-width: 763px) {
+    #form1 {
+        left:15%;
+        height:150px;
+    }
+}
