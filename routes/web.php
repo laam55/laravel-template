@@ -21,14 +21,6 @@ Route::group(['middleware'=>'CheckLogin','prefix'=>'admin'],function(){
 		Route::any('/delete/{id?}', ['as'=>'admin.user.delete','uses'=>'Admin\UserController@delete']);
 		Route::any('/profile', ['as'=>'admin.user.profile','uses'=>'Admin\UserController@profile']);
 	});
-
-	Route::group(['prefix'=>'user'],function(){
-		Route::any('/', ['as'=>'admin.user.index','uses'=>'Admin\UserController@index']);
-		Route::any('/create', ['as'=>'admin.user.create','uses'=>'Admin\UserController@create']);
-		Route::any('/edit/{id?}', ['as'=>'admin.user.edit','uses'=>'Admin\UserController@edit']);
-		Route::any('/delete/{id?}', ['as'=>'admin.user.delete','uses'=>'Admin\UserController@delete']);
-		Route::any('/profile', ['as'=>'admin.user.profile','uses'=>'Admin\UserController@profile']);
-	});
 });
 Route::any('admin/login', ['as'=>'admin.login','uses'=>'Admin\LoginController@index']);
 Route::get('admin/logout', ['as'=>'admin.logout','uses'=>'Admin\LoginController@logout']);
